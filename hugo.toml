@@ -1,0 +1,75 @@
+
+baseurl = "/"
+title = "219th Birmingham Scouts"
+languageCode = "en-gb"
+DefaultContentLanguage = "en-gb"
+paginate = "10" # Number of posts per page
+theme = "hugo-dpsg"
+
+[Author] # Used in authorbox
+  name = "219th Birmingham Leader Team"
+  bio = "219th Birmingham Scout Group are a group based in Hall Green, Birmingham, UK. We have a Beaver colony, Cub pack, Scout troop and an affiliated Explorer unit, Spartans ESU. This covers ages 6 to 18."
+  avatar = "scout_logo.png"
+
+[Params]
+  description = "Welcome to our scout group!" # Site description. Used in meta description
+  copyright = "219th Birmingham Scout Group, 2023" # Footer copyright holder, otherwise will use site title
+  opengraph = false # Enable OpenGraph if true
+  schema = false # Enable Schema
+  twitter_cards = false # Enable Twitter Cards if true
+  readmore = false # Show "Read more" button in list if true
+  authorbox = false # Show authorbox at bottom of pages if true
+  toc = true # Enable Table of Contents
+  pager = false # Show pager navigation (prev/next links) at the bottom of pages if true
+  indexPager = false # Show pager navigation on index page
+  post_meta = ["author", "date", "categories", "translations"] # Order of post meta information
+  mainSections = ["post", "blog", "news"] # Specify section pages to show on home page and the "Recent articles" widget
+  photosSections = ["photos"] # Specify section pages to show on home page and the "Recent photos" widget
+  photoTag = "photos" # Specify one tag to show on home page and the "Recent photos" widget. Similar as photoSections, but with 1 tag instead of 1 or multiple sections
+  dateformat = "02.01.2006" # Change the format of dates
+  customCSS = ["css/custom.css"] # Include custom CSS files, can also be used per-page as front matter attribute
+  customJS = ["js/custom.js"] # Include custom JS files
+#  customPartial = "piwik.html" # Include custom partials at the end of the page, e.g. tracking codes
+#  belowTitlePartial = "alert.html" # Include custom partial below the pages title
+
+[Params.style.vars]
+  highlightColor = "#7413dc" # Override main theme color
+
+[Params.logo]
+  image = "scout_logo.png" # Logo image. Path relative to "static"
+  image_alt = "Scouts logo image" # alt text for logo image, be screen reader friendly!
+  header = "tree_header.jpg" # Header image. Path relative to "static"
+  title = "219th Birmingham" # Logo title, otherwise will use site title
+  subtitle = "Based in Hall Green, Birmingham" # Logo subtitle
+
+[Params.sidebar]
+  home = "right" # Configure layout for home page
+  list = "left"  # Configure layout for list pages
+  single = "right" # Configure layout for single pages
+  # Enable widgets in given order
+  widgets = ["search", "recent", "recent_photos", "recent_photos_tags", "categories", "taglist", "languages"]
+  # alternatively "ddg-search" can be used, to search via DuckDuckGo
+  # widgets = ["ddg-search", "recent", "categories", "taglist", "social", "languages"]
+
+[Params.footer]
+  text = "[Imprint and Privacy](/imprint)" # Extra text in footer row, understands markdown
+#  right = "Donate!" # Right-aligned text in footer row, optional, understands markdown
+
+[Params.widgets]
+  recent_num = 5 # Set the number of articles in the "Recent articles" widget
+  tags_counter = false # Enable counter for each tag in "Tags" widget
+
+[Params.widgets.social]
+  # Enable parts of social widget
+  facebook = "username"
+  email = "example@example.com"
+
+# Custom social links
+[[Params.widgets.social.custom]]
+  title = "Youtube"
+  url = "https://youtube.com/user/username"
+  icon = "youtube.svg" # Optional. Path relative to "layouts/partials"
+
+[[Params.widgets.social.custom]]
+  title = "My Home Page"
+  url = "http://example.com"
